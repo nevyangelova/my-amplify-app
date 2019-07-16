@@ -1,0 +1,20 @@
+mutation createObj {
+  createObj(input: {
+    name: "Nevy"
+    symbol: "NAO"
+    price: 9000
+  }) {
+    id name symbol price
+  }
+}
+
+query listObj {
+  listObjs {
+    items {
+      id
+      name
+      symbol
+      price
+    }
+  }
+}
